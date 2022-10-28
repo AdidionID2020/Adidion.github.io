@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Short Link</title>
+    <style>
+        body{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .card{
+            border-radius: 50px;
+            outline: none;
+        }
+        .card-body{
+            background: #39343a;
+            color: #fff;
+            outline: #07a7f1;
+            cursor: pointer;
+            border-radius: 50px;
+
+        }
+        .card-body:hover{
+            z-index: 1;
+            animation: glow 8s linear infinite;
+        }
+        .card-body:first-child:hover{
+            background: linear-gradient(90deg, #07a7f1, #fa46ac, #fae736, #07a7f1);
+            background-size: 400%;
+        }
+        .card-body:last-child:hover{
+            background: linear-gradient(90deg, #07a7f1, #fa46ac, #fae736, #07a7f1);
+            background-size: 400%;
+        }
+
+        .card-body:first-child::before, 
+        .card-body:last-child::before{
+            content: '';
+            position: absolute;
+            background: inherit;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+            left: -5px;
+            filter: blur(20px);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .card-body:first-child:hover:before, 
+        .card-body:last-child:hover:before{
+            opacity: 1;
+        }
+        @keyframes glow {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 500%;
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url(img//13107749_5137894.jpg); background-size: cover; background-repeat: no-repeat;">
+    <center>
+        <img src="img/adot.jpg" style="width: 150px; border-radius: 50%;"> 
+        <h1 style="margin-top: 20px; color: white;" >Adi Dion</h1>
+        <h5 style="color: white;">Conten Creator | Frelance</h5>
+        <p style="color: white; margin-bottom: 50px; margin: 30px;" >Ingin Memiliki Bio Link Tanpa Ribet Pakai Linktree? Hubungi saya...!</p>
+        <div class="card col-lg-4 m-3" style="border-radius: 50px; outline: none;">
+            <a href="" target="_blank"style="text-decoration: none;">
+                <div class="card-body">
+                    <b>Gallery Bio Link</b>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4 m-3" style="border-radius: 50px;">
+            <a href="https://adidionid2020.github.io/" target="_blank" style="text-decoration: none;">
+                <div class="card-body" style="outline: none;">
+                    <b>Portofolio</b>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4 m-3" style="border-radius: 50px;">
+            <a href="https://wa.link/7ux09p" target="_blank" style="text-decoration: none;">
+                <div class="card-body">
+                    <b>Wathsapp</b>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4 m-3 " style="border-radius: 50px;">
+            <a href="https://www.instagram.com/backpacker__id/" target="_blank" style="text-decoration: none;">
+                <div class="card-body">
+                    <b>Instagram Feed</b>
+                </div>
+            </a>
+        </div>
+        <br>
+        <p style="font-size: 10pt; color: white; padding-top: 50px;">Thankyou<br>Created By Adi Dion</p>
+    </center>
+    <!--
+    <section id="biolink">
+        <h2 style="color: blanchedalmond; padding-top: 50px; text-align: center;">Gallery Bio Link<br>price 50k using whit html and css</h2>
+        <div class="galery" style="text-align: center;" >
+            <img src="img/WhatsApp Image 2022-04-14 at 03.26.18.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.20.22.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.06.13.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.26.18.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.20.22.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.06.13.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+        </div>
+    </section>
+    <section>
+        <h2 style="color: blanchedalmond; padding-top: 50px; text-align: center;">Gallery Bio Link<br>price 50k using with html and css</h2>
+        <div class="galery" style="text-align: center;" >
+            <img src="img/WhatsApp Image 2022-04-14 at 03.26.18.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.20.22.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.06.13.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.26.18.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.20.22.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+            <img src="img/WhatsApp Image 2022-04-14 at 03.06.13.jpeg" alt="text-align" width="200px" style="margin: 30px;">
+        </div>
+    </section>-->
+    <!--belum beres
+    <footer>
+        <ul class="sosial_icon">
+            <li><a href="#">w</a></li>
+            <li><a href="#">w</a></li>
+            <li><a href="#">w</a></li>
+            <li><a href="#">w</a></li>
+        </ul>
+    </footer>-->
+</body>
+</html>
